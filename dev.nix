@@ -16,6 +16,12 @@
 
   # Enable previews and customize configuration
   idx.previews = {
-
+    enable = true;
+    previews = {
+      web = {
+        command = ["genkit" "start"  "--port" "$PORT"];
+        manager = "web";
+      };
+    };
   };
 }
